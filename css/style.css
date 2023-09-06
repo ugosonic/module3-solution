@@ -1,0 +1,110 @@
+/**HEADER**/
+/* Add styles for the mobile menu button */
+.navbar-toggle {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px;
+    margin-right: 0px; /* Add some margin to separate it from the logo */
+}
+
+
+.navbar-toggle:hover .icon-bar {
+    background-color: #951C49;
+
+}
+
+/* Style the mobile menu dropdown */
+#collapsable-nav {
+    background-color: #333; /* Background color for the dropdown menu */
+    position: absolute;
+    top: 50px; /* Adjust as needed for your design */
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 999; /* Ensure it's above other content */
+}
+
+#nav-list {
+    margin: 0;
+    padding: 20px 0; /* Add padding to separate menu items */
+}
+
+#nav-list li {
+    margin: 10px 0;
+}
+
+#nav-list a {
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    display: block;
+}
+
+#nav-list a:hover {
+    color: #951C49;
+}
+.navbar-brand h3 {
+            margin: 0;
+            padding: 0;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  margin-top: -30px;
+  clear: both;
+}
+/* Show the dropdown when the menu button is clicked */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 20px;
+  flex: 1;
+  min-width: 300px;
+  border: 1px solid #000;
+  margin: 10px;
+  background-color: grey;
+  position: relative;
+  height: 1000px
+}
+
+.section-title {
+  position: relative;
+  text-align: center;
+}
+.full-width-section {
+            grid-column: span 2;
+        }
+
+@media screen and (max-width: 767px) {
+  .section {
+    flex: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .section {
+    flex: calc(100% - 20px);
+  }
+
+  .section:nth-child(3) {
+    flex: 100%;
+  }
+}
+
+h3 {
+  text-align: center;
+}
